@@ -108,13 +108,13 @@ class customer {
       bill += (e.qty * e.price);
     });
     if (bill >= 500 && bill < 1500) {
-      print("your bill is ${(bill * 10) / 100}");
+      print("your bill is ${bill-((bill * 10) / 100})");
     } else if (bill >= 1500 && bill < 3500) {
       print("your bill is ${bill-((bill * 20) / 100)}");
     } else if (bill >= 3500 && bill < 6500) {
-      print("your bill is ${(bill * 25) / 100}");
+      print("your bill is ${bill-((bill * 25) / 100})");
     } else {
-      print("your bill is ${(bill * 30) / 100}");
+      print("your bill is ${bill-((bill * 30) / 100})");
     }
   }
 }
